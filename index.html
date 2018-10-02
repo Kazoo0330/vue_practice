@@ -5,13 +5,6 @@
 <button id="b-button" v-bind:disabled="!canBuy">BUY</button>
 <script>
 
-  <!-- var vm = new Vue ({ -->
-  <!--   el: '#b-button', -->
-  <!--   data:{ -->
-  <!--     loggedInButton: 'logged in. you can buy it!' -->
-  <!--   } -->
-  <!-- }); -->
-
   var vm = new Vue ({
     el: '#b-button',
     data:{
@@ -22,6 +15,6 @@
 </script>
 
 <div id="app">
-  <p>{{ items[0].name }}: {{ items[0].price }} * {{ items[0].quantity }}</p>
+  <p>{{ items[0].price * items[0].quantity }}</p>
 </div>
 <script src="app.js"></script>
